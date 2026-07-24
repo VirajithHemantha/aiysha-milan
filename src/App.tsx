@@ -210,7 +210,7 @@ type GuestEntry = {
 };
 
 function RSVPForm() {
-  const endpoint = (import.meta as any).env?.VITE_RSVP_ENDPOINT as string | undefined;
+  const endpoint = "https://script.google.com/macros/s/AKfycbyfVoWuBLFFSVHQFunmYKcT3Zqu09OrEYaBxCS1keSGj8YLnaWkL0bjavJcaTJjJF1g/exec";
 
   const [attendance, setAttendance] = useState<Attendance>("yes");
   const [partyType, setPartyType] = useState<PartyType>("individual");
@@ -992,7 +992,7 @@ export default function App() {
                           DECEMBER · SATURDAY
                         </span>
                         <span className="text-[9px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.25em] text-taupe font-bold">
-                          6:30 PM ONWARDS · 2026
+                          4:00 PM ONWARDS · 2026
                         </span>
                         <span className="mt-1 block max-w-[200px] px-2 text-[9px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.12em] text-umber/75 text-center leading-snug break-words font-medium">
                           ST. MARY'S CHURCH, BAMBALAPITIYA
@@ -1364,6 +1364,9 @@ export default function App() {
           </p>
           <p className="serif text-sage/60 text-sm italic">We can't wait to celebrate with you</p>
 
+          <p className="text-zinc-400 text-xs pt-4 font-sans tracking-wider">
+            Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-sage hover:text-sage/80 underline transition-colors" href="https://wa.me/94707819074">invitemint</a>
+          </p>
         </motion.footer>
       </motion.main>
 
