@@ -18,6 +18,7 @@ import {
   VolumeX,
   Sparkles,
 } from "lucide-react";
+import GallerySection from "./GallerySection";
 
 // FlipCard Component with 3D Tilt Effect + Premium Mobile Tap Hint
 function FlipCard({
@@ -1351,6 +1352,9 @@ export default function App() {
             />
           </motion.div>
         </div>
+
+        {/* Pre-Wedding Moments Gallery Section */}
+        <GallerySection />
 
         <motion.footer
           initial={{ opacity: 0 }}
