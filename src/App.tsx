@@ -18,7 +18,7 @@ import {
   VolumeX,
   Sparkles,
 } from "lucide-react";
-import GallerySection from "./GallerySection";
+import PhotoMoment from "./PhotoMoment";
 
 // FlipCard Component with 3D Tilt Effect + Premium Mobile Tap Hint
 function FlipCard({
@@ -796,6 +796,8 @@ export default function App() {
           <div className="w-24 md:w-32 h-px bg-gradient-to-r from-transparent via-sage/40 to-transparent mx-auto mt-8" />
         </motion.div>
 
+        <PhotoMoment src="/pre/IMG_0957.JPG.jpeg" />
+
         {/* Updated premium envelope section */}
         <div className="flex justify-center w-full mb-8 mt-12 md:mt-28">
           {!isOpened ? (
@@ -1053,6 +1055,8 @@ export default function App() {
           )}
         </div>
 
+        <PhotoMoment src="/pre/IMG_0958.JPG.jpeg" />
+
         {/* Bento Grid Layout - Flipped Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-10 relative">
           <motion.div
@@ -1140,7 +1144,9 @@ export default function App() {
             />
           </motion.div>
 
-
+          <div className="col-span-2 lg:col-span-4 py-4 md:py-6">
+            <PhotoMoment src="/pre/IMG_0959.JPG.jpeg" />
+          </div>
 
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -1277,6 +1283,10 @@ export default function App() {
             />
           </motion.div>
 
+          <div className="col-span-2 lg:col-span-4 py-4 md:py-6">
+            <PhotoMoment src="/pre/IMG_0961.JPG.jpeg" />
+          </div>
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -1353,8 +1363,7 @@ export default function App() {
           </motion.div>
         </div>
 
-        {/* Pre-Wedding Moments Gallery Section */}
-        <GallerySection />
+        <PhotoMoment src="/pre/IMG_0962.JPG.jpeg" />
 
         <motion.footer
           initial={{ opacity: 0 }}
